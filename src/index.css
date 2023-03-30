@@ -1,0 +1,20 @@
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    scrollbar-width: none;
+    color: white;
+    background: url("./img/bg.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
