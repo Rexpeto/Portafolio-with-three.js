@@ -1,7 +1,13 @@
+import Hero from "./components/Hero";
+import Who from "./components/Who";
+import Works from "./components/Works";
+
 const App = () => {
     return (
-        <div>
-            <h1>Portafolio</h1>
+        <div className="container">
+            <Hero />
+            <Who />
+            <Works />
         </div>
     );
 };
