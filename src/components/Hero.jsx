@@ -1,7 +1,13 @@
+import Navbar from "./Navbar";
+
 const Hero = () => {
     return (
         <section>
-            Hero
+            <Navbar />
+            <div className="container-home">
+                Home
+                Home
+            </div>
         </section>
     );
 };
