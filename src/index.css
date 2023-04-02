@@ -3,6 +3,7 @@
 section {
     height: 100vh;
     scroll-snap-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -19,6 +20,11 @@ section {
 
 .container::-webkit-scrollbar {
     display: none;
+}
+
+.container-section {
+    margin: 0 auto;
+    width: 1200px;
 }
 
 .navbar {
@@ -42,7 +48,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
     gap: 2rem;
 }
 
