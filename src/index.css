@@ -98,6 +98,7 @@ nav a:hover::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 @media (min-width: 728px) {
@@ -124,6 +125,7 @@ nav a:hover::after {
 }
 
 .hero-right {
+    position: relative;
     display: flex;
     justify-content: center;
     flex: 3;
@@ -162,11 +164,19 @@ nav a:hover::after {
 }
 
 .hero-img {
-    width: 18rem;
+    width: 800px;
+    height: 600px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     animation: cohete 2s infinite ease alternate;
 }
 
-@media (min-width:728px) {
+@media (min-width: 728px) {
     .hero-img {
         width: 28rem;
     }
@@ -221,4 +231,41 @@ nav a:hover::after {
 .hero-button.download:hover {
     background-color: rgb(0, 190, 0);
     color: white;
+}
+
+/** Trabajos */
+.container-works {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.right-works {
+    flex: 1;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.listItem {
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.listItem::after {
+    content: "";
 }
